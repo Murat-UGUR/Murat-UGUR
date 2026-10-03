@@ -55,11 +55,9 @@ languages: [Turkish, English]
 
 ### 📜 Certifications
 
-![ePO](https://img.shields.io/badge/Service_Provider-ePolicy_Orchestrator_(ePO)_2023-C01818?style=flat-square)
-![ENS](https://img.shields.io/badge/Trellix_Endpoint_Security-Technical_Specialist-C01818?style=flat-square)
-![EDR](https://img.shields.io/badge/Trellix_Service_Provider-Endpoint_Detection_%26_Response-C01818?style=flat-square)
-![HX](https://img.shields.io/badge/Trellix_Service_Provider-Endpoint_Security_(HX)-C01818?style=flat-square)
-![Skyhigh](https://img.shields.io/badge/Skyhigh_Security-Skydriver_Tower_Operator-0067B1?style=flat-square)
+<p align="center">
+  <img src="assets/certifications.svg" width="100%" alt="Certifications: Trellix Service Provider ePolicy Orchestrator (ePO) 2023; Trellix Endpoint Security (ENS) Technical Specialist; Trellix Service Provider Endpoint Detection &amp; Response (EDR); Trellix Service Provider Endpoint Security (HX); Skyhigh Security Skydriver Tower Operator"/>
+</p>
 
 ### 🎓 Education
 
