@@ -49,7 +49,7 @@ languages: [Turkish, English]
 
 | Project | Description | Stack |
 |---|---|---|
-| [**compliance-hunter**](https://github.com/Murat-UGUR/compliance-hunter) | Daily Trellix ePO health check. Finds hosts with stale DATs or no check-in, tags them through the ePO Web API and alerts via webhook. Ships with a mock ePO server and CI. | Python · ePO Web API · pytest |
+| [**compliance-hunter**](https://github.com/Murat-UGUR/compliance-hunter) | Daily Trellix ePO health check. Finds hosts with stale DATs or no check-in, tags them through the ePO Web API, untags them once they recover and sends a new / still / recovered alert via webhook. Ships with a mock ePO server and CI on Linux and Windows. | Python · ePO Web API · pytest |
 | [**epo-db-health**](https://github.com/Murat-UGUR/epo-db-health) | Read-only T-SQL diagnostics for the ePO SQL Server database: table sizes, index fragmentation, log growth, backups, wait stats, event noise per product, stale agents and purge-task health. A PowerShell runner produces HTML/CSV reports. Every script runs in CI on SQL Server 2022. | T-SQL · SQL Server · PowerShell |
 | [**ivx-toolkit**](https://github.com/Murat-UGUR/ivx-toolkit) | CLI for the Trellix IVX sandbox API. Submits files, folders and URLs, collects verdicts and sandbox behaviour, exports HTML reports and STIX 2.1 IOCs. Includes connectivity diagnostics, offline parsing, a response sanitiser, a mock IVX server and CI on Linux and Windows. | Python · IVX REST API · STIX 2.1 |
 | [**ShadowGuard**](https://github.com/ezetrol4/shadowguard) *(contributor)* | Endpoint-first AI security platform. I build the TCP network-telemetry collector and its ground-truth validation. | Rust · Windows API |
