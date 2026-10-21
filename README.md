@@ -29,7 +29,7 @@ role:      Security Technical Operations Specialist @ Barikat Siber Güvenlik
 focus:     [Endpoint Security, EDR/EPP, Threat Intel Fabric, Data Protection, Security Validation]
 platforms: [Trellix ePO, ENS, HX, EX, FX, IVX, CM, TIE, DXL, DLP, Drive Encryption]
 backend:   [SQL Server / T-SQL, VMware, Hyper-V]
-coding:    [Python, T-SQL, Rust]
+coding:    [Python, T-SQL, PowerShell, Rust]
 languages: [Turkish, English]
 ```
 
@@ -52,6 +52,7 @@ languages: [Turkish, English]
 | [**compliance-hunter**](https://github.com/Murat-UGUR/compliance-hunter) | Daily Trellix ePO health check. Finds hosts with stale DATs or no check-in, tags them through the ePO Web API, untags them once they recover and sends a new / still / recovered alert via webhook. Ships with a mock ePO server and CI on Linux and Windows. | Python · ePO Web API · pytest |
 | [**epo-db-health**](https://github.com/Murat-UGUR/epo-db-health) | Read-only T-SQL diagnostics for the ePO SQL Server database: table sizes, index fragmentation, log growth, backups, wait stats, event noise per product, stale agents and purge-task health. A PowerShell runner produces HTML/CSV reports. Every script runs in CI on SQL Server 2022. | T-SQL · SQL Server · PowerShell |
 | [**ivx-toolkit**](https://github.com/Murat-UGUR/ivx-toolkit) | CLI for the Trellix IVX sandbox API. Submits files, folders and URLs, collects verdicts and sandbox behaviour, exports HTML reports and STIX 2.1 IOCs. Includes connectivity diagnostics, offline parsing, a response sanitiser, a mock IVX server and CI on Linux and Windows. | Python · IVX REST API · STIX 2.1 |
+| [**divitrack**](https://github.com/Murat-UGUR/divitrack) | Personal finance tracker that runs entirely on your machine. Ties a monthly income/expense budget to an investment portfolio: purpose-based target allocation, inflation-adjusted (CPI) real returns, a portfolio health score, corporate actions, dividend tracking and a monthly plan that splits what you saved across your goals. | Python · Streamlit · SQLite |
 | [**ShadowGuard**](https://github.com/ezetrol4/shadowguard) *(contributor)* | Endpoint-first AI security platform. I build the TCP network-telemetry collector and its ground-truth validation. | Rust · Windows API |
 
 ### 📜 Certifications
@@ -90,6 +91,8 @@ languages: [Turkish, English]
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 ![VMware](https://img.shields.io/badge/VMware-607078?style=flat-square&logo=vmware&logoColor=white)
 ![Hyper-V](https://img.shields.io/badge/Hyper--V-0078D4?style=flat-square&logo=windows&logoColor=white)
 ![Windows Server](https://img.shields.io/badge/Windows_Server-0078D6?style=flat-square&logo=windows&logoColor=white)
