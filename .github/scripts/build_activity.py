@@ -8,6 +8,8 @@ stats or badge service. Standard library only.
 import json
 import os
 import sys
+import time
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from xml.sax.saxutils import escape
@@ -133,8 +135,16 @@ THM_OUT = os.environ.get("THM_OUT", "assets/tryhackme.svg")
 def collect_thm():
     url = f"https://tryhackme.com/api/v2/public-profile?username={THM_USER}"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (profile-card)", "Accept": "application/json"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.load(r)["data"]
+    for attempt in range(1, 5):  # TryHackMe rate-limits shared CI IPs; back off and retry
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.load(r)["data"]
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == 4:
+                raise
+            wait = int(e.headers.get("Retry-After") or 0) or 30 * attempt
+            print(f"TryHackMe returned 429, retrying in {wait}s", file=sys.stderr)
+            time.sleep(min(wait, 120))
 
 
 def render_thm(d):
