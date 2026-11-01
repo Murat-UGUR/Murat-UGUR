@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/murat-ugur"><img src="https://img.shields.io/badge/LinkedIn-murat--ugur-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://tryhackme.com/p/MuRAT"><img src="https://img.shields.io/badge/TryHackMe-MuRAT-88CC14?style=for-the-badge&logo=tryhackme&logoColor=white" alt="TryHackMe"/></a>
   <img src="https://img.shields.io/badge/Ankara-Türkiye-E30A17?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Ankara, Türkiye"/>
   <img src="https://img.shields.io/badge/MSc-Cybersecurity-22d3ee?style=for-the-badge&logo=academia&logoColor=white" alt="MSc Cybersecurity"/>
 </p>
@@ -72,6 +73,14 @@ I'm a **Cyber Security Consultant** at **Komtera Teknoloji**, with a background 
 <p align="center">
   <img src="assets/certifications.svg" width="100%" alt="Certifications: Trellix Service Provider ePolicy Orchestrator (ePO) 2023; Trellix Endpoint Security (ENS) Technical Specialist; Trellix Service Provider Endpoint Detection &amp; Response (EDR); Trellix Service Provider Endpoint Security (HX); Skyhigh Security Skydriver Tower Operator"/>
 </p>
+
+### 🎯 Hands-on practice
+
+<p align="center">
+  <a href="https://tryhackme.com/p/MuRAT"><img src="assets/tryhackme.svg" width="100%" alt="TryHackMe profile MuRAT: level, ranking, rooms completed, badges, points and longest streak, refreshed weekly"/></a>
+</p>
+
+<sub>Hands-on labs on <a href="https://tryhackme.com/p/MuRAT">TryHackMe</a> across defensive security, SOC / SIEM (Splunk), Windows and Linux internals, Sysinternals and web security. The card is refreshed weekly from the public profile.</sub>
 
 ### 🎓 Education
 
