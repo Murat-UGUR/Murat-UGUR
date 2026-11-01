@@ -15,7 +15,7 @@
   <text x="40" y="72" class="t" font-size="24" font-weight="700" fill="#f1f5f9">GitHub activity</text>
   <rect x="236" y="62" width="90" height="4" rx="2" fill="url(#accent)"/>
   <text x="40" y="112" class="t" font-size="15" fill="#94a3b8">Contributions · last 12 months</text>
-  <text x="400" y="112" class="t" font-size="18" font-weight="700" fill="#f1f5f9" text-anchor="end">118</text>
+  <text x="400" y="112" class="t" font-size="18" font-weight="700" fill="#f1f5f9" text-anchor="end">119</text>
   <text x="40" y="146" class="t" font-size="15" fill="#94a3b8">Public repos</text>
   <text x="400" y="146" class="t" font-size="18" font-weight="700" fill="#f1f5f9" text-anchor="end">5</text>
   <text x="40" y="180" class="t" font-size="15" fill="#94a3b8">Languages</text>
