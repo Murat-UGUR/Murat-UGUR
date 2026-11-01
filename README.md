@@ -77,10 +77,10 @@ I'm a **Cyber Security Consultant** at **Komtera Teknoloji**, with a background 
 ### 🎯 Hands-on practice
 
 <p align="center">
-  <a href="https://tryhackme.com/p/MuRAT"><img src="assets/tryhackme.svg" width="100%" alt="TryHackMe profile MuRAT: level, ranking, rooms completed, badges, points and longest streak, refreshed weekly"/></a>
+  <a href="https://tryhackme.com/p/MuRAT"><img src="assets/tryhackme.svg" width="100%" alt="TryHackMe profile MuRAT: level, ranking, rooms completed, badges, points and longest streak"/></a>
 </p>
 
-<sub>Hands-on labs on <a href="https://tryhackme.com/p/MuRAT">TryHackMe</a> across defensive security, SOC / SIEM (Splunk), Windows and Linux internals, Sysinternals and web security. The card is refreshed weekly from the public profile.</sub>
+<sub>Hands-on labs on <a href="https://tryhackme.com/p/MuRAT">TryHackMe</a> across defensive security, SOC / SIEM (Splunk), Windows and Linux internals, Sysinternals and web security. Click the card for the live profile.</sub>
 
 ### 🎓 Education
 
