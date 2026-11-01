@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Builds assets/activity.svg (GitHub activity + language card) from the public GitHub API.
+"""Builds assets/activity.svg (GitHub activity + languages) and assets/tryhackme.svg (TryHackMe profile).
 
 Runs in GitHub Actions on a schedule, so the profile does not depend on any third-party
-stats service. Standard library only.
+stats or badge service. Standard library only.
 """
 
 import json
@@ -125,6 +125,70 @@ def render(d):
     return "\n".join(o)
 
 
+# --------------------------------------------------------------------------- TryHackMe card
+THM_USER = os.environ.get("THM_USER", "MuRAT")
+THM_OUT = os.environ.get("THM_OUT", "assets/tryhackme.svg")
+
+
+def collect_thm():
+    url = f"https://tryhackme.com/api/v2/public-profile?username={THM_USER}"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (profile-card)", "Accept": "application/json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.load(r)["data"]
+
+
+def render_thm(d):
+    W, H = 1200, 200
+    tiles = [
+        ("Rooms completed", f"{d['completedRoomsNumber']:,}"),
+        ("Badges", f"{d['badgesNumber']:,}"),
+        ("Points", f"{d['totalPoints']:,}"),
+        ("Longest streak", f"{d['largestStreak']:,} days"),
+    ]
+    o = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="TryHackMe profile of {escape(THM_USER)}">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#111c33"/></linearGradient>
+    <linearGradient id="thm" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#88cc14"/><stop offset="1" stop-color="#ef4444"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#1e2a44" stroke-width="1"/></pattern>
+    <style>
+      .t{{font-family:'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif}}
+      .m{{font-family:'JetBrains Mono',Consolas,'Courier New',monospace}}
+    </style>
+  </defs>
+  <rect width="{W}" height="{H}" rx="18" fill="url(#bg)"/>
+  <rect width="{W}" height="{H}" rx="18" fill="url(#grid)" opacity=".5"/>
+  <text x="40" y="44" class="m" font-size="15" fill="#88cc14">$ thm whoami --user {escape(THM_USER)}</text>
+  <text x="40" y="78" class="t" font-size="26" font-weight="700" fill="#f1f5f9">TryHackMe</text>
+  <rect x="40" y="90" width="90" height="4" rx="2" fill="url(#thm)"/>
+  <rect x="40" y="118" width="118" height="32" rx="16" fill="none" stroke="#88cc14"/>
+  <text x="99" y="139" class="m" font-size="14" font-weight="700" fill="#88cc14" text-anchor="middle">LEVEL {int(d['level'])}</text>
+  <rect x="168" y="118" width="118" height="32" rx="16" fill="none" stroke="#ef4444"/>
+  <text x="227" y="139" class="m" font-size="14" font-weight="700" fill="#f87171" text-anchor="middle">{escape(str(d['rank']).upper())}</text>''']
+    x0, tw, gap = 340, 195, 13
+    for i, (label, value) in enumerate(tiles):
+        x = x0 + i * (tw + gap)
+        o.append(f'  <rect x="{x}" y="40" width="{tw}" height="120" rx="14" fill="#0f172a" stroke="#1f2b47" stroke-width="1.5"/>')
+        o.append(f'  <text x="{x + tw / 2:.0f}" y="102" class="t" font-size="32" font-weight="700" fill="#f1f5f9" text-anchor="middle">{escape(value)}</text>')
+        o.append(f'  <text x="{x + tw / 2:.0f}" y="132" class="t" font-size="14" fill="#94a3b8" text-anchor="middle">{escape(label)}</text>')
+    stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    o.append(f'  <text x="{W - 40}" y="{H - 14}" class="m" font-size="11" fill="#475569" text-anchor="end">updated {stamp}</text>')
+    o.append("</svg>\n")
+    return "\n".join(o)
+
+
+def build_thm(sample=None):
+    """Writes the TryHackMe card. On any error the previous card is kept as it is."""
+    try:
+        d = sample or collect_thm()
+        svg = render_thm(d)
+    except Exception as e:
+        print(f"TryHackMe card not updated: {e}", file=sys.stderr)
+        return
+    os.makedirs(os.path.dirname(THM_OUT) or ".", exist_ok=True)
+    with open(THM_OUT, "w", encoding="utf-8") as f:
+        f.write(svg)
+    print(f"wrote {THM_OUT}: level {d['level']}, {d['rank']}, {d['completedRoomsNumber']} rooms")
+
 if __name__ == "__main__":
     if len(sys.argv) > 1:  # render from a saved JSON sample (local preview)
         with open(sys.argv[1], encoding="utf-8") as fh:
@@ -136,3 +200,4 @@ if __name__ == "__main__":
     with open(OUT, "w", encoding="utf-8") as f:
         f.write(render(data))
     print(f"wrote {OUT}: {data['public_repos']} repos, {len(data['langs'])} languages")
+    build_thm(json.load(open(sys.argv[2], encoding="utf-8")) if len(sys.argv) > 2 else None)
