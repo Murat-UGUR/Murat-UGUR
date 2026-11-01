@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="210" viewBox="0 0 600 210" role="img" aria-label="epo-db-health">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#111c33"/></linearGradient>
+    <style>.t{font-family:'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif}.m{font-family:'JetBrains Mono',Consolas,'Courier New',monospace}</style>
+  </defs>
+  <rect x="1" y="1" width="598" height="208" rx="16" fill="url(#bg)" stroke="#1f2b47" stroke-width="1.5"/>
+  <rect x="1" y="24" width="4" height="162" rx="2" fill="#e38c00"/>
+  <rect x="28" y="24" width="40" height="40" rx="10" fill="none" stroke="#e38c00" stroke-width="1.5"/>
+  <text x="48" y="49" class="m" font-size="13" font-weight="700" fill="#e38c00" text-anchor="middle">SQL</text>
+  <text x="82" y="52" class="m" font-size="21" font-weight="700" fill="#f1f5f9">epo-db-health</text>
+  <rect x="415" y="32" width="157" height="24" rx="12" fill="none" stroke="#f59e0b" stroke-opacity=".7"/>
+  <text x="494" y="48" class="m" font-size="11.5" fill="#f59e0b" text-anchor="middle">lab testing pending</text>
+  <text x="28" y="98" class="t" font-size="15" fill="#94a3b8">Read-only T-SQL diagnostics for the ePO database: table</text><text x="28" y="120" class="t" font-size="15" fill="#94a3b8">sizes, fragmentation, log growth, backups, wait stats</text><text x="28" y="142" class="t" font-size="15" fill="#94a3b8">and stale agents. HTML/CSV reports via PowerShell.</text>
+  <rect x="28" y="166" width="59" height="24" rx="12" fill="#111c33" stroke="#24314f"/><text x="58" y="182" class="m" font-size="12" fill="#cbd5e1" text-anchor="middle">T-SQL</text><rect x="95" y="166" width="96" height="24" rx="12" fill="#111c33" stroke="#24314f"/><text x="143" y="182" class="m" font-size="12" fill="#cbd5e1" text-anchor="middle">SQL Server</text><rect x="199" y="166" width="96" height="24" rx="12" fill="#111c33" stroke="#24314f"/><text x="247" y="182" class="m" font-size="12" fill="#cbd5e1" text-anchor="middle">PowerShell</text>
+</svg>
