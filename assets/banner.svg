@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Murat UĞUR — Security Technical Operations Specialist">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Murat UĞUR — Cyber Security Consultant at Komtera Teknoloji">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b1220"/>
@@ -44,6 +44,6 @@
   <text x="64" y="92" class="m" font-size="16" fill="#22d3ee">$ whoami</text>
   <text x="64" y="148" class="t" font-size="52" font-weight="700" fill="#f1f5f9">Murat UĞUR</text>
   <rect x="64" y="166" width="140" height="4" rx="2" fill="url(#accent)"/>
-  <text x="64" y="206" class="t" font-size="22" fill="#cbd5e1">Security Technical Operations Specialist</text>
-  <text x="64" y="240" class="m" font-size="15" fill="#94a3b8">Trellix · FireEye · ePO · EDR/EPP · DXL/TIE · DLP · Automation<tspan class="cur" fill="#22d3ee"> ▍</tspan></text>
+  <text x="64" y="206" class="t" font-size="22" fill="#cbd5e1">Cyber Security Consultant <tspan fill="#22d3ee">@ Komtera Teknoloji</tspan></text>
+  <text x="64" y="240" class="m" font-size="15" fill="#94a3b8">Security Consulting · Trellix · FireEye · ePO · EDR/EPP · DXL/TIE · Automation<tspan class="cur" fill="#22d3ee"> ▍</tspan></text>
 </svg>
