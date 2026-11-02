@@ -15,25 +15,25 @@
   <text x="40" y="72" class="t" font-size="24" font-weight="700" fill="#f1f5f9">GitHub activity</text>
   <rect x="236" y="62" width="90" height="4" rx="2" fill="url(#accent)"/>
   <text x="40" y="112" class="t" font-size="15" fill="#94a3b8">Contributions · last 12 months</text>
-  <text x="400" y="112" class="t" font-size="18" font-weight="700" fill="#f1f5f9" text-anchor="end">121</text>
+  <text x="400" y="112" class="t" font-size="18" font-weight="700" fill="#f1f5f9" text-anchor="end">138</text>
   <text x="40" y="146" class="t" font-size="15" fill="#94a3b8">Public repos</text>
   <text x="400" y="146" class="t" font-size="18" font-weight="700" fill="#f1f5f9" text-anchor="end">5</text>
   <text x="40" y="180" class="t" font-size="15" fill="#94a3b8">Languages</text>
   <text x="400" y="180" class="t" font-size="18" font-weight="700" fill="#f1f5f9" text-anchor="end">4</text>
   <text x="480" y="84" class="t" font-size="15" fill="#94a3b8">Languages (bytes of code, own public repos)</text>
   <g clip-path="url(#bar)">
-    <rect x="480.00" y="100" width="630.29" height="14" fill="#3572A5"/>
-    <rect x="1109.79" y="100" width="24.47" height="14" fill="#e38c00"/>
-    <rect x="1133.76" y="100" width="22.49" height="14" fill="#5391FE"/>
-    <rect x="1155.75" y="100" width="4.75" height="14" fill="#89e051"/>
+    <rect x="480.00" y="100" width="634.99" height="14" fill="#3572A5"/>
+    <rect x="1114.49" y="100" width="22.23" height="14" fill="#e38c00"/>
+    <rect x="1136.21" y="100" width="20.43" height="14" fill="#5391FE"/>
+    <rect x="1156.15" y="100" width="4.35" height="14" fill="#89e051"/>
   </g>
   <circle cx="486" cy="141" r="6" fill="#3572A5"/>
-  <text x="500" y="146" class="t" font-size="15" fill="#e2e8f0">Python <tspan fill="#94a3b8">92.6%</tspan></text>
+  <text x="500" y="146" class="t" font-size="15" fill="#e2e8f0">Python <tspan fill="#94a3b8">93.3%</tspan></text>
   <circle cx="716" cy="141" r="6" fill="#e38c00"/>
-  <text x="730" y="146" class="t" font-size="15" fill="#e2e8f0">TSQL <tspan fill="#94a3b8">3.5%</tspan></text>
+  <text x="730" y="146" class="t" font-size="15" fill="#e2e8f0">TSQL <tspan fill="#94a3b8">3.2%</tspan></text>
   <circle cx="946" cy="141" r="6" fill="#5391FE"/>
-  <text x="960" y="146" class="t" font-size="15" fill="#e2e8f0">PowerShell <tspan fill="#94a3b8">3.2%</tspan></text>
+  <text x="960" y="146" class="t" font-size="15" fill="#e2e8f0">PowerShell <tspan fill="#94a3b8">2.9%</tspan></text>
   <circle cx="486" cy="171" r="6" fill="#89e051"/>
   <text x="500" y="176" class="t" font-size="15" fill="#e2e8f0">Shell <tspan fill="#94a3b8">0.6%</tspan></text>
-  <text x="1160" y="214" class="m" font-size="11" fill="#475569" text-anchor="end">updated 2026-11-01</text>
+  <text x="1160" y="214" class="m" font-size="11" fill="#475569" text-anchor="end">updated 2026-11-02</text>
 </svg>
