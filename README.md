@@ -43,31 +43,6 @@ I'm a **Cyber Security Consultant** at **Komtera Teknoloji**, with a background 
 | 🔐 **Data protection** | **DLP**, File & Removable Media Protection, **Drive Encryption** lifecycle |
 | 🎯 **Security validation** | Breach & attack simulation with **Picus Security** |
 
-### 💼 Experience
-
-| Period | Role | Company |
-|---|---|---|
-| **11/2026 – present** | **Cyber Security Consultant** | **Komtera Teknoloji** · Ankara |
-| 06/2026 – 10/2026 | Security Technical Operations Specialist | Barikat Siber Güvenlik · Ankara |
-| 09/2022 – 05/2026 | Cyber Security Specialist | Ada Mühendislik ve Yazılım Hizmetleri · Ankara |
-
-<details>
-<summary><b>Details</b></summary>
-<br/>
-
-**Security Technical Operations Specialist**, Barikat Siber Güvenlik · *06/2026 – 10/2026*
-- Managed enterprise security infrastructure on Trellix
-- Proactive security validation with Picus Security
-
-**Cyber Security Specialist**, Ada Mühendislik ve Yazılım Hizmetleri · *09/2022 – 05/2026*
-- Led deployment, architecture and initial configuration of HX, EX, CM, FX, ENS, DLP, IVX, TIE, DXL, FRP, DE and ePO
-- Designed and scaled ePO hierarchies; architected the DXL fabric; optimised TIE integration
-- Drove large ENS/HX rollouts with behavioral-analysis tuning that reduced false positives
-- Resolved console performance and log-storage bottlenecks with T-SQL queries and maintenance scripts
-- Designed VMware / Hyper-V environments for product deployment
-
-</details>
-
 ### 📜 Certifications
 
 <p align="center">
@@ -81,11 +56,6 @@ I'm a **Cyber Security Consultant** at **Komtera Teknoloji**, with a background 
 </p>
 
 <sub>Hands-on labs on <a href="https://tryhackme.com/p/MuRAT">TryHackMe</a> across defensive security, SOC / SIEM (Splunk), Windows and Linux internals, Sysinternals and web security. Click the card for the live profile.</sub>
-
-### 🎓 Education
-
-- **M.Sc. Cybersecurity**, Ahmet Yesevi University *(2025)*. Thesis: *Mathematical comparison of EDR vs. AV/EPP models*, an analytical benchmark of Endpoint Detection & Response against traditional antivirus and endpoint protection platforms.
-- **B.Sc. Mechanical Engineering**, Gaziantep University *(2021)*. Graduation project: an autonomous-system framework built on **ROS**.
 
 ### 🧰 Tech stack
 
