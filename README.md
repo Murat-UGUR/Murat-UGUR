@@ -18,7 +18,7 @@ I'm a **Cyber Security Consultant** at **Komtera Teknoloji**, with a background 
 **🔭 Currently**
 
 - 💼 Cyber security consulting at **Komtera Teknoloji**
-- 🧪 Preparing live-environment tests for **ivx-toolkit** and **epo-db-health**
+- 🧪 Building a **Trellix test lab** (Active Directory + SQL Server + ePO) to test Agent, ENS, DLP, FRP and Application & Change Control, and to run **ivx-toolkit** and **epo-db-health** against live systems
 - 🦀 Building the network-telemetry collector of **ShadowGuard**, an endpoint-first AI security platform, in Rust
 
 ### 🚀 Featured projects
@@ -27,7 +27,7 @@ I'm a **Cyber Security Consultant** at **Komtera Teknoloji**, with a background 
   <a href="https://github.com/Murat-UGUR/compliance-hunter"><img src="assets/projects/compliance-hunter.svg" width="49%" alt="compliance-hunter: daily Trellix ePO health check that tags stale-DAT and silent hosts via the ePO Web API and sends webhook alerts"/></a>
   <a href="https://github.com/Murat-UGUR/epo-db-health"><img src="assets/projects/epo-db-health.svg" width="49%" alt="epo-db-health: read-only T-SQL diagnostics for the Trellix ePO SQL Server database"/></a>
   <a href="https://github.com/Murat-UGUR/ivx-toolkit"><img src="assets/projects/ivx-toolkit.svg" width="49%" alt="ivx-toolkit: CLI for the Trellix IVX sandbox API with HTML reports and STIX 2.1 IOC export"/></a>
-  <a href="https://github.com/Murat-UGUR/divitrack"><img src="assets/projects/divitrack.svg" width="49%" alt="divitrack: local, privacy-first personal finance and portfolio tracker"/></a>
+  <a href="https://github.com/Murat-UGUR/divitrack"><img src="assets/projects/divitrack.svg" width="49%" alt="divitrack: local, privacy-first portfolio and dividend tracker with per-lot real and USD returns, XIRR benchmarks, stress-test scenarios and a pre-purchase rule check"/></a>
 </p>
 
 <sub>Also contributing to <b>ShadowGuard</b> (private repo): an endpoint-first AI security platform. My part is the TCP network-telemetry collector and its ground-truth validation (Rust, Windows API).</sub>

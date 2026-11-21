@@ -147,6 +147,13 @@ def collect_thm():
             time.sleep(min(wait, 120))
 
 
+def rank_label(d):
+    """TryHackMe sometimes returns rank as "Top 15%", sometimes as a number plus topPercentage."""
+    if d.get("topPercentage") is not None:
+        return f"TOP {d['topPercentage']}%"
+    return str(d["rank"]).upper()
+
+
 def render_thm(d):
     W, H = 1200, 200
     tiles = [
@@ -173,7 +180,7 @@ def render_thm(d):
   <rect x="40" y="118" width="118" height="32" rx="16" fill="none" stroke="#88cc14"/>
   <text x="99" y="139" class="m" font-size="14" font-weight="700" fill="#88cc14" text-anchor="middle">LEVEL {int(d['level'])}</text>
   <rect x="168" y="118" width="118" height="32" rx="16" fill="none" stroke="#ef4444"/>
-  <text x="227" y="139" class="m" font-size="14" font-weight="700" fill="#f87171" text-anchor="middle">{escape(str(d['rank']).upper())}</text>''']
+  <text x="227" y="139" class="m" font-size="14" font-weight="700" fill="#f87171" text-anchor="middle">{escape(rank_label(d))}</text>''']
     x0, tw, gap = 340, 195, 13
     for i, (label, value) in enumerate(tiles):
         x = x0 + i * (tw + gap)
